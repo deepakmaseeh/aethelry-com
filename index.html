@@ -83,6 +83,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aethelry — Ideas, elevated.</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -266,6 +267,24 @@
   .quote .who .role { font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
   @media (max-width: 900px) { .quotes { grid-template-columns: 1fr; } }
 
+  /* THE MARK */
+  .mark-sec { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: var(--sp-6); align-items: center; }
+  .mark-stage {
+    background: var(--paper); border: 1px solid var(--line); border-radius: 8px;
+    display: grid; place-items: center; padding: var(--sp-5); min-height: 380px;
+  }
+  .constructs { display: flex; flex-direction: column; gap: 28px; }
+  .construct .k {
+    font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--brass-deep); margin-bottom: 6px;
+  }
+  .construct h3 { font-size: 1.35rem; margin-bottom: 6px; }
+  .construct p { font-size: 0.95rem; color: var(--muted); line-height: 1.55; max-width: 36ch; }
+  @media (max-width: 860px) {
+    .mark-sec { grid-template-columns: 1fr; gap: var(--sp-4); }
+    .mark-stage { min-height: 260px; padding: 32px 20px; }
+  }
+
   /* FINAL */
   .final { text-align: center; padding-block: var(--sp-7); }
   .final h2 { font-size: clamp(2.4rem, 5vw, 4rem); line-height: 1.04; max-width: 18ch; margin: 0 auto var(--sp-3); }
@@ -345,6 +364,7 @@
       </div>
       <div class="links">
         <a href="#about">About</a>
+        <a href="#mark">The mark</a>
         <a href="#work">Pillars</a>
         <a href="#catalogue">Catalogue</a>
         <a href="#cases">Work</a>
@@ -407,6 +427,45 @@
       <div class="r d1">
         <p class="lead">In a world drowning in noise, we believe ideas should be shaped with care, communicated with clarity, and elevated so they endure. From the books we publish to the leaders we develop and the platforms we build, we do one thing at heart: take what matters and make it last.</p>
         <p class="lead" style="margin-top:var(--sp-3);">The name comes from <em>æthel</em>, an old word for <em>noble</em>. We hold ideas, and the people behind them, to that standard.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE MARK -->
+  <section class="block" id="mark" style="padding-top:0;">
+    <div class="wrap">
+      <div class="pillars-head r">
+        <div class="sec-label"><span class="dot"></span><span class="eyebrow">The mark</span></div>
+        <h2>A doorway for ideas that <em>endure</em>.</h2>
+        <p class="body" style="margin-top:var(--sp-2);">Three quiet parts. One threshold. The arch holds the Æ — from <em style="font-style:italic;color:var(--brass-deep);">æthel</em>, noble — and a single brass note lights the way up.</p>
+      </div>
+      <div class="mark-sec">
+        <div class="mark-stage r">
+          <svg viewBox="0 0 200 250" width="180" height="225" aria-label="Aethelry arch mark">
+            <rect x="30" y="232" width="46" height="14" fill="#2a2230"/><rect x="124" y="232" width="46" height="14" fill="#2a2230"/>
+            <rect x="34" y="110" width="30" height="9" fill="#2a2230"/><rect x="136" y="110" width="30" height="9" fill="#2a2230"/>
+            <path fill="#2a2230" fill-rule="evenodd" d="M40 232 L40 118 A60 60 0 0 1 160 118 L160 232 Z M58 232 L58 120 A42 42 0 0 1 142 120 L142 232 Z"/>
+            <polygon points="89,58 111,58 107,92 93,92" fill="#b3823f"/><rect x="58" y="206" width="84" height="4" fill="#b3823f"/>
+            <text x="100" y="196" text-anchor="middle" font-family="Fraunces, serif" font-weight="500" font-size="66" fill="#2a2230">Æ</text>
+          </svg>
+        </div>
+        <div class="constructs r d1">
+          <div class="construct">
+            <div class="k">01 · Arch</div>
+            <h3>The threshold</h3>
+            <p>A Roman archway with impost capitals and a keystone. A doorway between the known and the possible.</p>
+          </div>
+          <div class="construct">
+            <div class="k">02 · Ligature</div>
+            <h3>The Æ inscription</h3>
+            <p>Set in a high-contrast serif, carved into the opening like an engraved title page.</p>
+          </div>
+          <div class="construct">
+            <div class="k">03 · Keystone</div>
+            <h3>The brass note</h3>
+            <p>One warm accent at the crown and the base: the light ideas rise toward.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -644,6 +703,7 @@
       <div class="fcol">
         <h4>Explore</h4>
         <a href="#about">About</a>
+        <a href="#mark">The mark</a>
         <a href="#work">Pillars</a>
         <a href="#catalogue">Catalogue</a>
         <a href="#cases">Work</a>
